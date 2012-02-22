@@ -26,7 +26,7 @@ import com.madp.utils.ParticipantsAdapter;
 public class MeetingInfoActivity extends ListActivity {
 	private final String TAG = "MeetingInfoActivity";
 	private ParticipantsAdapter p_adapter;
-	private Context c;
+	private Context c, cd;
 	private Meeting meeting;
 	private WebService ws;
 
