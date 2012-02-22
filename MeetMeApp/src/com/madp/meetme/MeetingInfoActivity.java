@@ -26,7 +26,7 @@ import com.madp.utils.ParticipantsAdapter;
 public class MeetingInfoActivity extends ListActivity {
 	private final String TAG = "MeetingInfoActivity";
 	private ParticipantsAdapter p_adapter;
-	private Context c, cd;
+	private Context c;
 	private Meeting meeting;
 	private WebService ws;
 
@@ -51,6 +51,7 @@ public class MeetingInfoActivity extends ListActivity {
 			refreshMeetingInfo(meetingId);
 			if (meeting == null) {
 				Log.e(TAG, "Could not retrieve meeting info from server");
+				Log.e(TAG, "HEEEEEELLLLLLLLLLLOOO");
 				this.finish();
 			}
 
